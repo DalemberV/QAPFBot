@@ -25,7 +25,7 @@ def get_session(user_id):
 def save_session(user_id, data):
     sessions[user_id] = data
 
-# --- HELPER: TECLADO DE MINERALES COMPLETO ---
+# --- HELPER--
 def get_mineral_keyboard():
     return [
         [InlineKeyboardButton("⚪ Cuarzo", callback_data='min_cuarzo'), InlineKeyboardButton("🌸 Feld. K", callback_data='min_feldespato_k')],
@@ -105,7 +105,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
         save_session(user_id, session)
 
-    # LÓGICA QAPF (Igual que antes)
+    # LÓGICA QAPF
     elif data.startswith("qap_tex_"):
         val = data.replace("qap_tex_", "")
         session['textura'] = val

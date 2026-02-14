@@ -27,7 +27,6 @@ async def telegram_webhook(request: dict):
     application.add_handler(CommandHandler('start', start))
     application.add_handler(CallbackQueryHandler(button_handler))
     
-    # --- NUEVO: Escuchar texto que NO sea comando ---
     # Esto activará la función handle_message cuando el usuario escriba números
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
     

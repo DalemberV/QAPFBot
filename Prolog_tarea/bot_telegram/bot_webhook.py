@@ -8,12 +8,12 @@ geologia_image = Image.debian_slim() \
 
 app = modal.App("geo-expert-webhook")
 
-# 2. Definimos el Endpoint (La puerta donde Telegram tocará)
+# 2. Definimos el Endpoint
 @app.function(
     image=geologia_image,
-    # Montamos tu archivo local geologia.pl para que esté disponible en la nube
+    # Montamos el archivo local geologia.pl para que esté disponible en la nube
     mounts=[Mount.from_local_dir(".", remote_path="/root")],
-    # Guardamos el Token de forma segura (te explico abajo cómo ponerlo)
+    # Guardamos el Token de forma segura
     secrets=[Secret.from_name("telegram-secret")]
 )
 @modal.web_endpoint(method="POST")
@@ -50,8 +50,6 @@ async def telegram_webhook(data: dict):
             return []
 
     # --- LÓGICA DEL BOT (Handlers) ---
-    # Copiamos aquí tus handlers para asegurar que estén en el contexto de Modal
-    # (Nota: Por brevedad, pongo la estructura, asegúrate de copiar tus funciones start/button aquí o importarlas)
     
     async def start(update, context):
         # ... Tu código del start ...
@@ -61,7 +59,6 @@ async def telegram_webhook(data: dict):
         # ... Tu lógica de botones ...
         pass 
 
-    # --- INICIALIZACIÓN RÁPIDA ---
     # Construimos la app solo para procesar ESTE mensaje específico
     token = os.environ["TELEGRAM_TOKEN"]
     application = ApplicationBuilder().token(token).build()
