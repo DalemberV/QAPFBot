@@ -1,6 +1,6 @@
-# ⚒️ GeoExpert AI
+# **QAPF Bot**
 
-GeoExpert AI es un sistema experto desarrollado para la identificación y
+QAPF Bot es un sistema experto desarrollado para la identificación y
 clasificación de rocas ígneas mediante dos enfoques principales: una
 observación cualitativa de campo y un análisis cuantitativo de laboratorio
 basado en el diagrama QAPF de Streckeisen.
@@ -13,7 +13,7 @@ conversacional en **Telegram**.
 
 ---
 
-## ✨ Características Principales
+## Características Principales
 
 El sistema ofrece dos modos de uso adaptados a diferentes situaciones:
 
@@ -45,7 +45,7 @@ petrográfico.
 
 ---
 
-## 🛠️ Arquitectura y Tecnologías
+## Arquitectura y Tecnologías
 
 El proyecto se divide en módulos que comparten el motor de inferencia:
 
@@ -138,7 +138,7 @@ BotFather) y configurarlo como variable de entorno `TELEGRAM_TOKEN`.
 
 ---
 
-## 🧠 Base de Conocimiento Geológico (`geologia.pl`)
+## Base de Conocimiento Geológico (`geologia.pl`)
 
 El archivo de Prolog contiene reglas distribuidas en:
 
