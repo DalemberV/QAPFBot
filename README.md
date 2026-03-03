@@ -19,6 +19,7 @@ Puedes probar el sistema experto a través de las siguientes plataformas:
 
 - **Aplicación Web (Streamlit)**: [apppfbot-5dhieelk8gx2dxmqmjwicr.streamlit.app](https://apppfbot-5dhieelk8gx2dxmqmjwicr.streamlit.app/)
 
+
   <img src="assets/streamlit_app.png" alt="Interfaz Web Streamlit" width="500"/>
 
 - **Bot de Telegram**: [t.me/RockDalem_bot](https://t.me/RockDalem_bot)
