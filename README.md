@@ -13,6 +13,21 @@ conversacional en **Telegram**.
 
 ---
 
+## 🌐 Enlaces a las Aplicaciones
+
+Puedes probar el sistema experto a través de las siguientes plataformas:
+
+- **Aplicación Web (Streamlit)**: [apppfbot-5dhieelk8gx2dxmqmjwicr.streamlit.app](https://apppfbot-5dhieelk8gx2dxmqmjwicr.streamlit.app/)
+
+  <img src="assets/streamlit_app.png" alt="Interfaz Web Streamlit" width="500"/>
+
+- **Bot de Telegram**: [t.me/RockDalem_bot](https://t.me/RockDalem_bot)
+  - **Instrucciones**: Para usar el bot de Telegram, es recomendable **abrir el enlace en la aplicación móvil** de Telegram en un teléfono. Una vez en el chat con el bot, debes enviar el comando `/start` para iniciarlo.
+
+  <img src="assets/telegram_app.jfif" alt="Bot de Telegram" width="250"/>
+
+---
+
 ## Características Principales
 
 El sistema ofrece dos modos de uso adaptados a diferentes situaciones:
